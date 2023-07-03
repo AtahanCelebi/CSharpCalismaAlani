@@ -1,0 +1,15 @@
+/Users/apple/Projects/userProject/userProject/bin/Debug/net6.0/userProject
+/Users/apple/Projects/userProject/userProject/bin/Debug/net6.0/userProject.deps.json
+/Users/apple/Projects/userProject/userProject/bin/Debug/net6.0/userProject.runtimeconfig.json
+/Users/apple/Projects/userProject/userProject/bin/Debug/net6.0/userProject.dll
+/Users/apple/Projects/userProject/userProject/bin/Debug/net6.0/userProject.pdb
+/Users/apple/Projects/userProject/userProject/obj/Debug/net6.0/userProject.csproj.AssemblyReference.cache
+/Users/apple/Projects/userProject/userProject/obj/Debug/net6.0/userProject.GeneratedMSBuildEditorConfig.editorconfig
+/Users/apple/Projects/userProject/userProject/obj/Debug/net6.0/userProject.AssemblyInfoInputs.cache
+/Users/apple/Projects/userProject/userProject/obj/Debug/net6.0/userProject.AssemblyInfo.cs
+/Users/apple/Projects/userProject/userProject/obj/Debug/net6.0/userProject.csproj.CoreCompileInputs.cache
+/Users/apple/Projects/userProject/userProject/obj/Debug/net6.0/userProject.dll
+/Users/apple/Projects/userProject/userProject/obj/Debug/net6.0/refint/userProject.dll
+/Users/apple/Projects/userProject/userProject/obj/Debug/net6.0/userProject.pdb
+/Users/apple/Projects/userProject/userProject/obj/Debug/net6.0/userProject.genruntimeconfig.cache
+/Users/apple/Projects/userProject/userProject/obj/Debug/net6.0/ref/userProject.dll
