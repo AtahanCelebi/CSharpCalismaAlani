@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/apple/Projects/userProject/userProject/userProject.csproj": {}
+    "/Users/apple/Projects/CSharpCalismaAlani/userProject/userProject/userProject.csproj": {}
   },
   "projects": {
-    "/Users/apple/Projects/userProject/userProject/userProject.csproj": {
+    "/Users/apple/Projects/CSharpCalismaAlani/userProject/userProject/userProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/apple/Projects/userProject/userProject/userProject.csproj",
+        "projectUniqueName": "/Users/apple/Projects/CSharpCalismaAlani/userProject/userProject/userProject.csproj",
         "projectName": "userProject",
-        "projectPath": "/Users/apple/Projects/userProject/userProject/userProject.csproj",
+        "projectPath": "/Users/apple/Projects/CSharpCalismaAlani/userProject/userProject/userProject.csproj",
         "packagesPath": "/Users/apple/.nuget/packages/",
-        "outputPath": "/Users/apple/Projects/userProject/userProject/obj/",
+        "outputPath": "/Users/apple/Projects/CSharpCalismaAlani/userProject/userProject/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/apple/.nuget/NuGet/NuGet.Config"

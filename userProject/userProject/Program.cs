@@ -29,6 +29,13 @@ namespace userProject
             Console.WriteLine($"Kullanıcı {user.userName} ulaşım için {string.Join(", ", user.UserPhones.Select(item => item.PhoneNumber))}");
 
 
+            user.UserEmail.UserEmailId = 0;
+            user.UserEmail.UserEmailAdress = "ata@ata.com";
+            user.UserEmail.UserID = user.userID; //userid =1 ata
+
+            Console.WriteLine($"Kullanıcı {user.userName} eposta adresi: {user.UserEmail.UserEmailAdress}");
+
+
             Console.ReadLine();
         }
     }
