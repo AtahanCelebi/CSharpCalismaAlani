@@ -32,6 +32,7 @@ namespace userProject
 
 		public void UserInfo()
 		{
+			Console.WriteLine("---------------------------------");
 			Console.WriteLine("User ID: " + this.UserID);
             Console.WriteLine("User Name: " + this.UserName);
             Console.WriteLine("User Email Address: " + this.UserEmail.EmailAddress);
@@ -41,7 +42,7 @@ namespace userProject
             {
                 Console.WriteLine("Phone Number: " + phone.PhoneNumber);
             }
-
+			Console.WriteLine("---------------------------------");
 		}
     }
 }
