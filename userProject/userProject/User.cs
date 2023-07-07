@@ -21,9 +21,10 @@ public class User
         UserEmail = new UserEmail();
     }
 
-    public void AddPhone(UserPhone phone)
+    public void AddPhone(string newPhoneNumber )
     {
-        UserPhones.Add(phone);
+        UserPhone newPhone = new UserPhone(){PhoneID=1,PhoneNumber=newPhoneNumber,UserID=this.UserID};
+        UserPhones.Add(newPhone);
     }
 
     public void RemovePhone(UserPhone phone)
@@ -55,12 +56,6 @@ public class User
 {
     User user = new User(userID, userName);
 
-    UserPhone phone = new UserPhone()
-    {
-        PhoneID = 1,
-        PhoneNumber = phoneNumber,
-        UserID = user.UserID
-    };
 
     UserEmail email = new UserEmail()
     {
@@ -69,7 +64,7 @@ public class User
         UserID = user.UserID
     };
 
-    user.AddPhone(phone);
+    user.AddPhone(phoneNumber);
     user.UpdateEmail(email);
 
     return user;
