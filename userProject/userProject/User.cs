@@ -55,6 +55,7 @@ public class User
         }
         else{
         UserEmail updatedEmail = new UserEmail(){UserEmailID=1,EmailAddress=email,UserID=this.UserID};
+        this.UserEmail=updatedEmail;
         Console.WriteLine("Email başarılı şekilde kayıt edildi.");
         }
     }
