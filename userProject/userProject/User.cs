@@ -23,18 +23,40 @@ public class User
 
     public void AddPhone(string newPhoneNumber )
     {
+        if(string.IsNullOrEmpty(newPhoneNumber))
+        {
+            Console.WriteLine("Telefon numarası boş olamaz");
+        }
+        else{
         UserPhone newPhone = new UserPhone(){PhoneID=1,PhoneNumber=newPhoneNumber,UserID=this.UserID};
         UserPhones.Add(newPhone);
+        }
+       
     }
 
-    public void RemovePhone(UserPhone phone)
+    public void RemovePhone(string removePhoneNumber)
     {
-        UserPhones.Remove(phone);
+        UserPhone removePhone = UserPhones.FirstOrDefault(item => item.PhoneNumber==removePhoneNumber);
+        if(removePhone ==null)
+        {
+            Console.WriteLine($"{removePhoneNumber} böyle bir numara {this.UserName} kullanıcısına kayıtlı değil");
+        }
+        else{
+            UserPhones.Remove(removePhone);
+            Console.WriteLine($"{removePhoneNumber} numarası başarıyla silindi!");
+        }
     }
 
-    public void UpdateEmail(UserEmail email)
+    public void UpdateEmail(string email)
     {
-        UserEmail = email;
+        if(string.IsNullOrEmpty(email))
+        {
+            Console.WriteLine($"Email boş olamaz!");
+        }
+        else{
+        UserEmail updatedEmail = new UserEmail(){UserEmailID=1,EmailAddress=email,UserID=this.UserID};
+        Console.WriteLine("Email başarılı şekilde kayıt edildi.");
+        }
     }
 
     public void UserInfo()
@@ -54,20 +76,21 @@ public class User
     
     public User CreateUser(int userID, string userName, string emailAddress, string phoneNumber)
 {
+    if(string.IsNullOrEmpty(userName)||string.IsNullOrEmpty(emailAddress)||string.IsNullOrEmpty(phoneNumber))
+    {
+        Console.WriteLine("Eksik veya hatalı bilgi girdiniz.");
+        return null;
+    }
+    else
+    {
     User user = new User(userID, userName);
 
-
-    UserEmail email = new UserEmail()
-    {
-        UserEmailID = 1,
-        EmailAddress = emailAddress,
-        UserID = user.UserID
-    };
-
     user.AddPhone(phoneNumber);
-    user.UpdateEmail(email);
+    user.UpdateEmail(emailAddress);
 
     return user;
+    }
+    
 }
 
 }
