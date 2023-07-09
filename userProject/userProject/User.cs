@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic; 
 using userProject; 
+using System.Text.Json;
 public class User
 {
     public int UserID { get; set; }
@@ -82,7 +83,7 @@ public class User
             Console.WriteLine("Car Name: "+car.CarName);
             
         }
-        
+
         Console.WriteLine("---------------------------------");
     }
     
@@ -104,5 +105,9 @@ public class User
     }
     
 }
-
+  public void Info()
+    {
+        string jsonString = JsonSerializer.Serialize(this);
+        Console.WriteLine(jsonString);
+    } 
 }
