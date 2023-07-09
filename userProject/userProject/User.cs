@@ -62,13 +62,7 @@ public class User
         this.UserEmail=updatedEmail;
         Console.WriteLine("Email başarılı şekilde kayıt edildi.");
         }
-    }
-
-    public void AddCar(string CarName)
-    {
-        UserCar newCar = new UserCar(){CarID=1,CarName=CarName};
-        UserCars.Add(newCar);
-    }
+    } 
 
     public void UserInfo()
     {
@@ -82,11 +76,13 @@ public class User
         {
             Console.WriteLine("Phone Number: " + phone.PhoneNumber);
         }
-         Console.WriteLine("User Cars:");
-        foreach (var car in UserCars)
+        Console.WriteLine("User Cars:");
+        foreach(var car in UserCars)
         {
-            Console.WriteLine("Car Name: " + car.CarName);
+            Console.WriteLine("Car Name: "+car.CarName);
+            
         }
+        
         Console.WriteLine("---------------------------------");
     }
     
