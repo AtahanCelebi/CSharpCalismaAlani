@@ -7,10 +7,13 @@ public class User
     public List<UserPhone> UserPhones { get; set; }
     public UserEmail UserEmail { get; set; }
 
+    public List<UserCar> UserCars { get; set; }
+
     public User()
     {
         UserPhones = new List<UserPhone>();
         UserEmail = new UserEmail();
+        UserCars = new List<UserCar>();
     }
 
     public User(int userID, string userName)
@@ -19,6 +22,7 @@ public class User
         UserName = userName;
         UserPhones = new List<UserPhone>();
         UserEmail = new UserEmail();
+        UserCars = new List<UserCar>();
     }
 
     public void AddPhone(string newPhoneNumber )
@@ -60,6 +64,12 @@ public class User
         }
     }
 
+    public void AddCar(string CarName)
+    {
+        UserCar newCar = new UserCar(){CarID=1,CarName=CarName};
+        UserCars.Add(newCar);
+    }
+
     public void UserInfo()
     {
         Console.WriteLine("---------------------------------");
@@ -71,6 +81,11 @@ public class User
         foreach (var phone in UserPhones)
         {
             Console.WriteLine("Phone Number: " + phone.PhoneNumber);
+        }
+         Console.WriteLine("User Cars:");
+        foreach (var car in UserCars)
+        {
+            Console.WriteLine("Car Name: " + car.CarName);
         }
         Console.WriteLine("---------------------------------");
     }
