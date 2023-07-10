@@ -110,4 +110,10 @@ public class User
         string jsonString = JsonSerializer.Serialize(this);
         Console.WriteLine(jsonString);
     } 
+
+    public void AddCarToUser(UserCar newCar)
+    {
+        UserCars.Add(newCar);
+        Console.WriteLine($"{newCar.CarName} başarıyla {this.UserName} kullanıcısına eklendi.");
+    }
 }

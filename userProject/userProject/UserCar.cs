@@ -17,11 +17,7 @@ namespace userProject
             Users = new List<User>();
         }
 
-        public void AddCarToUser(User user)
-        {
-           user.UserCars.Add(this); //cem abi burayı çözene kadar çok uğraştım :D
-            Console.WriteLine($"{this.CarName} başarıyla {user.UserName} kullanıcısına eklendi.");
-        }
+       
         
        public UserCar CreateCar(int carID,string CarName )
        {

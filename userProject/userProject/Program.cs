@@ -21,14 +21,14 @@ user2.UpdateEmail("deneme@deneme.com");
 user2.UserInfo();
 
 UserCar bmw = new UserCar().CreateCar(1,"bmw");
-bmw.AddCarToUser(user2);
+user2.AddCarToUser(bmw);
 user2.UserInfo();
 
+UserCar audi = new UserCar().CreateCar(1,"audi");
+user2.AddCarToUser(audi);
+user2.UserInfo();
+user2.Info();
 
-bmw.AddCarToUser(user1);
-user1.UserInfo();
-
-user1.Info();
 
 
 
